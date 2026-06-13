@@ -255,4 +255,35 @@
 
 		}
 
+
+		document.addEventListener("DOMContentLoaded", () => {
+
+    const tabs = document.querySelectorAll(".tab-btn");
+    const projects = document.querySelectorAll(".project-card");
+
+    tabs.forEach(tab => {
+
+        tab.addEventListener("click", () => {
+
+            tabs.forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            const filter = tab.dataset.filter;
+
+            projects.forEach(project => {
+
+                if (project.classList.contains(filter)) {
+                    project.style.display = "block";
+                } else {
+                    project.style.display = "none";
+                }
+
+            });
+
+        });
+
+    });
+
+});
+
 })(jQuery);

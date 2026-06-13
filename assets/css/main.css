@@ -4687,3 +4687,50 @@ input, select, textarea {
 		}
 
 	}
+
+	/* Project Category Tabs */
+
+.project-tabs {
+    width: 100%;
+    max-width: 72rem;
+    margin: 0 auto 2rem auto;
+    display: flex;
+}
+
+.project-tabs .tab-btn {
+    flex: 1;
+
+    background: #ffffff;
+    color: #212931;
+
+    border: 2px solid #ffffff;
+
+    height: auto;
+    line-height: normal;
+
+    padding: 1.2rem 1.5rem;
+
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 900;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.project-tabs .tab-btn.active {
+    background: rgba(255,255,255,0.15);
+    color: #ffffff;
+}
+
+.project-tabs .tab-btn:hover {
+    background: rgba(255,255,255,0.08);
+}
