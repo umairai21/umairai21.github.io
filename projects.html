@@ -4,78 +4,105 @@
 		<title>Umair Raizan | Projects</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Selected data analytics, data science, and machine learning projects by Umair Raizan." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="is-preload">
-		<div id="wrapper" class="fade-in">
-			<header id="header">
-				<a href="index.html" class="logo">Back to Home</a>
+	<body class="is-preload landing-page">
+		<div class="landing-shell">
+			<header class="landing-header">
+				<a href="index.html" class="brand">Umair Raizan</a>
+				<nav class="landing-nav">
+					<a href="index.html">Home</a>
+					<a href="index.html#about">About</a>
+					<a href="index.html#contact">Contact</a>
+				</nav>
 			</header>
 
-			<div class="project-tabs">
-				<button class="tab-btn active" data-filter="analytics">Data Analytics</button>
-				<button class="tab-btn" data-filter="datascience">Data Science</button>
-				<button class="tab-btn" data-filter="ml">Machine Learning</button>
-			</div>
+			<main class="landing-main">
+				<section class="projects-hero">
+					<p class="hero-kicker">Portfolio</p>
+					<h1>Projects</h1>
+					<p>A selection of my work across data analytics, data science, and machine learning.</p>
+				</section>
 
-			<div id="main">
-				<section class="posts">
+				<div class="project-tabs">
+					<button class="tab-btn active" data-filter="analytics">Data Analytics</button>
+					<button class="tab-btn" data-filter="datascience">Data Science</button>
+					<button class="tab-btn" data-filter="ml">Machine Learning</button>
+				</div>
+
+				<section class="projects-grid">
 					<article class="project-card analytics">
-						<header>
+						<a href="https://github.com/umairai21/Diseases-Risk-Data-Analysis.git" class="project-card-image">
+							<img src="./images/online-data-analysis-flat-illustration-of-data-analytics-vector.jpg" alt="Global Cardiometabolic Risk Dashboard" />
+							<span class="project-tag">Power BI · PostgreSQL</span>
+						</a>
+						<div class="project-card-body">
 							<h2><a href="https://github.com/umairai21/Diseases-Risk-Data-Analysis.git">Global Cardiometabolic Risk Dashboard (1980–2014)</a></h2>
-						</header>
-						<a href="https://github.com/umairai21/Diseases-Risk-Data-Analysis.git" class="image fit"><img src="./images/online-data-analysis-flat-illustration-of-data-analytics-vector.jpg" alt="" /></a>
-						<p>A 35-year longitudinal analysis of obesity, diabetes, blood pressure, and cholesterol across 200 nations, built on a PostgreSQL pipeline and visualized in an interactive Power BI executive dashboard.</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/umairai21/Diseases-Risk-Data-Analysis.git" class="button">View Project</a></li>
-						</ul>
+							<p>A 35-year longitudinal analysis of obesity, diabetes, blood pressure, and cholesterol across 200 nations, built on a PostgreSQL pipeline and visualized in an interactive Power BI executive dashboard.</p>
+							<div class="project-card-footer">
+								<a href="https://github.com/umairai21/Diseases-Risk-Data-Analysis.git" class="button primary">View Project →</a>
+							</div>
+						</div>
 					</article>
 
 					<article class="project-card analytics">
-						<header>
+						<a href="https://github.com/umairai21/SQL-Retail-Sales-Analysis.git" class="project-card-image">
+							<img src="./images/image 3.webp" alt="Exploratory Data Analysis in SQL" />
+							<span class="project-tag">SQL · PostgreSQL</span>
+						</a>
+						<div class="project-card-body">
 							<h2><a href="https://github.com/umairai21/SQL-Retail-Sales-Analysis.git">Exploratory Data Analysis in SQL</a></h2>
-						</header>
-						<a href="https://github.com/umairai21/SQL-Retail-Sales-Analysis.git" class="image fit"><img src="./images/image 3.webp" alt="" /></a>
-						<p>A pure SQL project covering database setup, data cleaning, and business-driven queries, uncovering customer demographics, high-value transactions, peak sales periods, and top-spending customers using PostgreSQL.</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/umairai21/SQL-Retail-Sales-Analysis.git" class="button">View Project</a></li>
-						</ul>
+							<p>A pure SQL project covering database setup, data cleaning, and business-driven queries, uncovering customer demographics, high-value transactions, peak sales periods, and top-spending customers.</p>
+							<div class="project-card-footer">
+								<a href="https://github.com/umairai21/SQL-Retail-Sales-Analysis.git" class="button primary">View Project →</a>
+							</div>
+						</div>
 					</article>
 
 					<article class="project-card analytics">
-						<header>
+						<a href="https://github.com/umairai21/Customer-Behaviour-Analysis.git" class="project-card-image">
+							<img src="./images/image 2.jpg" alt="Customer Purchase Behaviour Analysis" />
+							<span class="project-tag">Python · Power BI</span>
+						</a>
+						<div class="project-card-body">
 							<h2><a href="https://github.com/umairai21/Customer-Behaviour-Analysis.git">Customer Purchase Behaviour Analysis</a></h2>
-						</header>
-						<a href="https://github.com/umairai21/Customer-Behaviour-Analysis.git" class="image fit"><img src="./images/image 2.jpg" alt="" /></a>
-						<p>An end-to-end analytics workflow covering Python-based EDA, data cleaning, and PostgreSQL querying, culminating in an interactive Power BI dashboard with KPI cards, trend charts, and business insights reporting.</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/umairai21/Customer-Behaviour-Analysis.git" class="button">Full Story</a></li>
-						</ul>
+							<p>An end-to-end analytics workflow covering Python-based EDA, data cleaning, and PostgreSQL querying, culminating in an interactive Power BI dashboard with KPI cards, trend charts, and business insights.</p>
+							<div class="project-card-footer">
+								<a href="https://github.com/umairai21/Customer-Behaviour-Analysis.git" class="button primary">Full Story →</a>
+							</div>
+						</div>
 					</article>
 
-					<article class="project-card datascience" style="display:none;">
-						<header>
+					<article class="project-card datascience placeholder" style="display:none;">
+						<div class="project-card-image">
+							<img src="./images/pic01.jpg" alt="Data Science Projects" />
+							<span class="project-tag">Coming Soon</span>
+						</div>
+						<div class="project-card-body">
 							<h2>Data Science Projects</h2>
-						</header>
-						<a href="#" class="image fit"><img src="./images/pic01.jpg" alt=""></a>
-						<p>Work in progress. Advanced data science projects involving statistical modelling, feature engineering, predictive analytics, and real-world datasets will be published here soon.</p>
-						<ul class="actions special">
-							<li><a href="#" class="button">Coming Soon</a></li>
-						</ul>
+							<p>Work in progress. Advanced data science projects involving statistical modelling, feature engineering, predictive analytics, and real-world datasets will be published here soon.</p>
+							<div class="project-card-footer">
+								<span class="button">Coming Soon</span>
+							</div>
+						</div>
 					</article>
 
-					<article class="project-card ml" style="display:none;">
-						<header>
+					<article class="project-card ml placeholder" style="display:none;">
+						<div class="project-card-image">
+							<img src="./images/pic01.jpg" alt="Machine Learning Projects" />
+							<span class="project-tag">Coming Soon</span>
+						</div>
+						<div class="project-card-body">
 							<h2>Machine Learning Projects</h2>
-						</header>
-						<a href="#" class="image fit"><img src="./images/pic01.jpg" alt=""></a>
-						<p>Work in progress. Machine learning projects covering classification, regression, recommendation systems, and model deployment will be added here.</p>
-						<ul class="actions special">
-							<li><a href="#" class="button">Coming Soon</a></li>
-						</ul>
+							<p>Work in progress. Machine learning projects covering classification, regression, recommendation systems, and model deployment will be added here.</p>
+							<div class="project-card-footer">
+								<span class="button">Coming Soon</span>
+							</div>
+						</div>
 					</article>
 				</section>
-			</div>
+			</main>
 		</div>
 
 		<script src="assets/js/jquery.min.js"></script>
