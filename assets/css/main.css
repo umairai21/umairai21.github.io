@@ -5279,10 +5279,36 @@ body.landing-page {
     text-align: left;
 }
 
+.tool-tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+.tool-tags li {
+    margin: 0;
+    padding: 0.25rem 0.65rem;
+    border: 1px solid rgba(24, 191, 239, 0.3);
+    border-radius: 999px;
+    background: rgba(24, 191, 239, 0.08);
+    color: #9fdfff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
 .project-card-footer {
     margin-top: 1.4rem;
     padding-top: 1.2rem;
     border-top: 1px solid rgba(255,255,255,0.09);
+}
+
+.project-card-footer.two-buttons {
+    display: flex;
+    gap: 0.6rem;
 }
 
 .project-card-body .button {
