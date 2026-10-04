@@ -193,7 +193,7 @@ body.landing-page {
 }
 
 .hero-kicker {
-	margin-bottom: 0.75rem;
+	margin: 0.6rem 0 1rem;
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	color: #9fdfff;
@@ -357,6 +357,38 @@ body.landing-page {
 	font-size: 0.82rem;
 	font-weight: 700;
 	color: #9fdfff;
+}
+
+.landing-section p a {
+	color: #9fdfff;
+	border-bottom: 1px dotted rgba(159, 223, 255, 0.5);
+}
+
+.landing-section p a:hover {
+	color: #ffffff;
+	border-bottom-color: transparent;
+}
+
+.skill-group {
+	margin-top: 1.25rem;
+}
+
+.skill-group .skill-tags {
+	margin-top: 0.5rem;
+}
+
+.skill-group-label {
+	margin: 0;
+	font-size: 0.78rem;
+	font-weight: 900;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+	color: rgba(255,255,255,0.6);
+}
+
+.skill-tag.secondary {
+	color: rgba(255,255,255,0.78);
+	border-color: rgba(255,255,255,0.1);
 }
 
 .landing-footer {
@@ -5092,6 +5124,26 @@ body.landing-page {
     }
 }
 
+.tab-intros {
+    max-width: 44rem;
+    margin: -1.5rem auto 2.5rem;
+}
+
+.tab-intro {
+    margin: 0;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+}
+
+.tab-intro strong {
+    color: #9fdfff;
+}
+
+.project-card[hidden],
+.tab-intro[hidden] {
+    display: none !important;
+}
+
 /* Projects Page */
 
 .projects-hero {
@@ -5202,6 +5254,7 @@ body.landing-page {
 }
 
 .project-card-body h2 {
+    color: #ffffff;
     font-size: 1.15rem;
     margin-bottom: 0.7rem;
     line-height: 1.35;

@@ -260,29 +260,32 @@
 
     const tabs = document.querySelectorAll(".tab-btn");
     const projects = document.querySelectorAll(".project-card");
+    const intros = document.querySelectorAll(".tab-intro");
+
+    if (!tabs.length) return;
+
+    const showTab = (filter) => {
+
+        tabs.forEach(t => t.classList.toggle("active", t.dataset.filter === filter));
+        projects.forEach(project => { project.hidden = !project.classList.contains(filter); });
+        intros.forEach(intro => { intro.hidden = !intro.classList.contains(filter); });
+
+    };
 
     tabs.forEach(tab => {
 
         tab.addEventListener("click", () => {
 
-            tabs.forEach(t => t.classList.remove("active"));
-            tab.classList.add("active");
-
-            const filter = tab.dataset.filter;
-
-            projects.forEach(project => {
-
-                if (project.classList.contains(filter)) {
-                    project.style.display = "block";
-                } else {
-                    project.style.display = "none";
-                }
-
-            });
+            showTab(tab.dataset.filter);
+            history.replaceState(null, "", "#" + tab.dataset.filter);
 
         });
 
     });
+
+    // Open the tab named in the URL hash (e.g. projects.html#software).
+    const initial = location.hash.slice(1);
+    showTab([...tabs].some(t => t.dataset.filter === initial) ? initial : tabs[0].dataset.filter);
 
 });
 
